@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unit_test_example/photo/photo_screen.dart';
 import 'counter/counter_screen.dart';
 import 'user/user_screen.dart';
 
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const UserScreen(),
+      home: const PhotoScreen(),
+      // home:  const CounterScreen(),
+      // home: UserScreen(),
     );
   }
 }
