@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart';
 import 'package:unit_test_example/user/user_repository.dart';
 
 import 'user_model.dart';
@@ -11,7 +12,7 @@ class UserScreen extends StatefulWidget {
 }
 
 class _UserScreenState extends State<UserScreen> {
-  Future<User> getUser = UserRepository().getUser();
+  Future<User> getUser = UserRepository(client: Client()).getUser();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

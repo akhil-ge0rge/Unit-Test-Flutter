@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:unit_test_example/counter/counter.dart';
-
 import 'counter/counter_screen.dart';
 import 'user/user_screen.dart';
 
